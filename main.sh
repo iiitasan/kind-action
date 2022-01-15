@@ -51,8 +51,8 @@ main() {
         args+=(--kubectl-version "${INPUT_KUBECTL_VERSION}")
     fi
 
-    echo "$SCRIPT_DIR"
-    echo "$SCRIPT_DIR/kind.sh" "${args[@]}"
+    echo "SCRIPT_DIR is $SCRIPT_DIR"
+    echo "SCRIPT_DIR with kind.sh : $SCRIPT_DIR/kind.sh" "${args[@]}"
     "$SCRIPT_DIR/kind.sh" "${args[@]}"
 }
 
