@@ -18,7 +18,7 @@ inputs:
   log_level:
     description: "The log level for kind"
   kubectl_version:
-    description: "The kubectl version to use (default: v1.20.8)"
+    description: "The kubectl version to use (default: v1.20.8) -- "
 runs:
   using: "node12"
   main: "main.js"
